@@ -1,4 +1,48 @@
 ---
-layout: home
-# Index page
+layout: default
+title: Podcast Archive
 ---
+
+<h1>🎙 Podcast Archive</h1>
+
+<div class="post-grid">
+{% for post in site.posts %}
+  <a class="post-card" href="{{ post.url }}">
+    {% if post.image.path %}
+      <img src="{{ post.image.path }}" alt="{{ post.title }}">
+    {% endif %}
+
+    <div class="card-body">
+      <h2>{{ post.title }}</h2>
+      <p>{{ post.description }}</p>
+    </div>
+  </a>
+{% endfor %}
+</div>
+
+<style>
+.post-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+  gap:20px;
+}
+
+.post-card{
+  display:block;
+  text-decoration:none;
+  color:inherit;
+  border:1px solid #444;
+  border-radius:12px;
+  overflow:hidden;
+}
+
+.post-card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+}
+
+.card-body{
+  padding:12px;
+}
+</style>
