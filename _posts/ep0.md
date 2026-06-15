@@ -6,10 +6,10 @@ date: 2026-06-12 20:00:00 +0900
 categories: [Podcast, アンガールズ]
 tags: [ANN, Podcast]
 image:
-  path: /assets/img/angirls-0.jpg
+  path: /assets/img/image0.jpg
 ---
 
-## 3分要約あ
+## 3分要約
 
 - 新番組スタート
 - タイトル発表
