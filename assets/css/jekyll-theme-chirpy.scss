@@ -3,39 +3,37 @@
 
 @import 'main';
 
-#sidebar #avatar {
+#sidebar .profile-wrapper {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+#sidebar #avatar,
+#sidebar .site-avatar {
   width: 180px !important;
   max-width: 100% !important;
-
   margin: 12px auto 18px auto !important;
-
-  display: flex !important;
-  justify-content: center !important;
-
   padding: 0 !important;
   border: none !important;
   box-shadow: none !important;
   background: transparent !important;
   border-radius: 0 !important;
+  display: block !important;
 }
 
-#sidebar #avatar img {
-  display: block;
+#sidebar #avatar img,
+#sidebar .site-avatar img {
+  display: block !important;
   margin: 0 auto !important;
-
   width: 100% !important;
   height: auto !important;
-
   object-fit: contain !important;
-
   border: none !important;
   border-radius: 0 !important;
   box-shadow: none !important;
   background: transparent !important;
-}
-
-#sidebar .profile-wrapper {
-  text-align: center !important;
 }
 
 #sidebar .site-title,
