@@ -4,29 +4,27 @@
 @import 'main';
 
 #sidebar .profile-wrapper {
-  width: 100%;
+  width: 100% !important;
+  align-self: stretch !important;
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
+  text-align: center !important;
 }
 
-#sidebar #avatar,
-#sidebar .site-avatar {
+#sidebar .profile-wrapper #avatar {
+  display: block !important;
   width: 180px !important;
-  max-width: 100% !important;
   margin: 12px auto 18px auto !important;
   padding: 0 !important;
   border: none !important;
   box-shadow: none !important;
   background: transparent !important;
   border-radius: 0 !important;
-  display: block !important;
 }
 
-#sidebar #avatar img,
-#sidebar .site-avatar img {
+#sidebar .profile-wrapper #avatar img {
   display: block !important;
-  margin: 0 auto !important;
   width: 100% !important;
   height: auto !important;
   object-fit: contain !important;
@@ -35,6 +33,7 @@
   box-shadow: none !important;
   background: transparent !important;
 }
+
 
 #sidebar .site-title,
 #sidebar .site-subtitle {
@@ -70,28 +69,4 @@ footer em,
 footer .site-info,
 footer .site-info a {
   display: none !important;
-}
-
-
-/* ロゴ枠を消す */
-#sidebar #avatar {
-  border: none !important;
-  box-shadow: none !important;
-  background: transparent !important;
-  padding: 0 !important;
-
-  width: 220px !important;
-  height: auto !important;
-  margin: 10px auto 20px auto !important;
-}
-
-/* ロゴ画像 */
-#sidebar #avatar img {
-  border: none !important;
-  border-radius: 0 !important;
-  background: transparent !important;
-
-  width: 100% !important;
-  height: auto !important;
-  object-fit: contain !important;
 }
