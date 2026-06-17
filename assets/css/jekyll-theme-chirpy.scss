@@ -3,7 +3,21 @@
 
 @import 'main';
 
-#sidebar .profile-wrapper {
+#sidebar #avatar {
+  width: 220px !important;
+  height: auto !important;
+  border: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+}
+
+#sidebar #avatar img {
+  border-radius: 0 !important;
+  object-fit: contain !important;
+}
+
+#sidebar .site-title,
+#sidebar .site-subtitle {
   display: none !important;
 }
 
