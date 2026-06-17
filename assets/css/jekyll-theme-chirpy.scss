@@ -51,3 +51,27 @@ footer .site-info,
 footer .site-info a {
   display: none !important;
 }
+
+
+/* ロゴ枠を消す */
+#sidebar #avatar {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+
+  width: 220px !important;
+  height: auto !important;
+  margin: 10px auto 20px auto !important;
+}
+
+/* ロゴ画像 */
+#sidebar #avatar img {
+  border: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
